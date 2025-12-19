@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = '我的技术博客'
+theme = 'PaperMod'  # 这一行告诉 Hugo 使用刚才下载的主题
+
+[params]
+  defaultTheme = "auto" # 跟随系统自动切换深色模式
+  author = "Me"
+  
+  # 首页显示的社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/你的ID"
