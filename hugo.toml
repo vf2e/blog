@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://vf2e.github.io/blog/'
 languageCode = 'zh-cn'
 title = '我的技术博客'
 theme = 'PaperMod'  # 这一行告诉 Hugo 使用刚才下载的主题
@@ -10,4 +10,4 @@ theme = 'PaperMod'  # 这一行告诉 Hugo 使用刚才下载的主题
   # 首页显示的社交链接
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/你的ID"
+    url = "https://github.com/vf2e"
