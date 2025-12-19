@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 date: 2025-12-19T10:00:00+08:00
-draft: true 
 ---
 
 ## 终于搭建好了
