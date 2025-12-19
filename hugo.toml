@@ -3,10 +3,46 @@ languageCode = 'zh-cn'
 title = '我的技术博客'
 theme = 'PaperMod'
 
-[params]
-defaultTheme = "auto"
-author = "Me"
+# 开启搜索功能必须加这三行
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/vf2e"
+[params]
+  defaultTheme = "auto"
+  author = "vf2e"
+  ShowReadingTime = true    # 显示阅读时间
+  ShowShareButtons = true   # 显示分享按钮
+  ShowPostNavLinks = true   # 显示上一篇/下一篇
+  ShowBreadCrumbs = true    # 显示面包屑导航
+  ShowCodeCopyButtons = true # 显示代码复制按钮
+  
+  # 首页显示的社交图标
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/vf2e"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:你的邮箱@example.com"
+
+# --- 菜单栏 ---
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
